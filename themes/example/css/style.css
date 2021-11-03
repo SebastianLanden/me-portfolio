@@ -43,6 +43,7 @@ body {
 
 .title, .logo {
     padding: 3em 3em 3em 0;
+    width: 10em;
 }
 
 @media (max-width: 767px) {

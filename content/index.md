@@ -6,6 +6,8 @@ Description: This is our index page.
 Home page
 ==========================
 
-The source for this page is in `content/index.md`.
+Hej! 
 
-This is a sample home page written in markdown with some frontmatter defined.
+Jag heter Sebastian Landén. Jag pluggar Webbprogrammering på BTH. På fritiden gillar jag att spela gitarr och datorspel.
+
+
