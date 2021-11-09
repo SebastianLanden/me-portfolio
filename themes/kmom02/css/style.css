@@ -6511,6 +6511,10 @@ body {
   width: 10em;
 }
 
+.logo img {
+  width: 200px;
+}
+
 .title p {
   font-style: italic;
 }
@@ -6534,6 +6538,10 @@ body {
   border-top: 1px solid #222;
   background-color: #444;
   color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
 
 .footer a {
