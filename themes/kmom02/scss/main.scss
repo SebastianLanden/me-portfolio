@@ -1,9 +1,16 @@
+html {
+    height: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to top left, #334d50, #cbcaa5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: $background-color;
     color: $font-color;
+    min-height: 100%;
 }
 
 .main {
