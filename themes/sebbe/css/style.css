@@ -72,11 +72,18 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
+    height: 200px;
+    padding: 3em;
+    background-color: #444;
     border-top: 1px solid #222;
 }
 
 .footer a {
     color: #222;
+}
+
+.footer>div {
+    text-align: center;
 }
 
 .footer .social {
