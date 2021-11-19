@@ -6456,7 +6456,12 @@ readers do not read off random characters that represent icons */
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -6488,7 +6493,7 @@ body {
   background: linear-gradient(to top left, #334d50, #cbcaa5);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #3d5a80;
+  background-color: #fff;
   color: #000;
   min-height: 100%;
 }
@@ -6499,7 +6504,8 @@ body {
   margin: 2em auto;
 }
 
-.header, .footer {
+.header,
+.footer {
   flex: 0 0 auto;
 }
 
@@ -6508,12 +6514,14 @@ body {
     width: 96%;
   }
 }
-.header, .site-header {
+.header,
+.site-header {
   display: flex;
   justify-content: space-between;
 }
 
-.title, .logo {
+.title,
+.logo {
   padding: 3em 3em 3em 0;
   width: 10em;
 }
@@ -6543,11 +6551,11 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #444;
-  color: white;
+  color: #fff;
 }
 
 .footer a {
-  color: white;
+  color: #fff;
 }
 
 .footer .social {
@@ -6587,4 +6595,76 @@ pre code {
   background: transparent;
   overflow-x: auto;
   line-height: 1.4;
+}
+
+.technology-container {
+  display: grid;
+  grid-column: span 3;
+  gap: 2em 3em;
+}
+
+.technology-container h1,
+.technology-container p {
+  grid-column: span 3;
+}
+
+.technology-container .technology {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  height: 5em;
+  border: 1px solid #000;
+  padding: 1em;
+  background-image: linear-gradient(to top left, gray, #fff);
+  color: #000;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.technology-container .technology:hover {
+  border: 1px solid transparent;
+}
+
+.technology-article {
+  display: flex;
+  flex-direction: row;
+}
+
+.technology-article .sidebar {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.technology-article .sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.technology-article .sidebar a {
+  color: black;
+  text-decoration: none;
+}
+
+.technology-article .sidebar a:hover {
+  color: #cbcaa5;
+}
+
+.technology-article .article {
+  width: auto;
+}
+
+@media (max-width: 767px) {
+  .technology-article .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .technology-container {
+    display: grid;
+    grid-column: span 1;
+    gap: 2em 3em;
+  }
+
+  .technology-container h1,
+.technology-container p {
+    grid-column: span 1;
+  }
 }
