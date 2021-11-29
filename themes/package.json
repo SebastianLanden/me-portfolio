@@ -9,8 +9,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass sebbe/scss/style.scss sebbe/css/style.css --no-source-map",
-    "style-min": "sass sebbe/scss/style.scss sebbe/css/style.min.css --no-source-map --style compressed"
+    "watch": "sass sebbe/scss/style.scss:sebbe/css/style.css sebbe/scss/style-dark.scss:sebbe/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass sebbe/scss/style.scss:sebbe/css/style.min.css sebbe/scss/style-dark.scss:sebbe/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass sebbe/scss/style-dark.scss sebbe/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass sebbe/scss/style-dark.scss sebbe/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass sebbe/scss/style.scss sebbe/css/style.css --no-source-map",
+    "style-light-min": "sass sebbe/scss/style.scss sebbe/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
