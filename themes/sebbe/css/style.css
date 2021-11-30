@@ -6493,7 +6493,6 @@ body {
   background: linear-gradient(to top left, #334d50, #cbcaa5);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: linear-gradient(to top left, #334d50, #cbcaa5);
   color: #000;
   min-height: 100%;
 }
@@ -6520,6 +6519,10 @@ body {
   justify-content: space-between;
 }
 
+.nav a {
+  color: #000;
+}
+
 .title,
 .logo {
   padding: 3em 3em 3em 0;
@@ -6528,6 +6531,11 @@ body {
 
 .logo img {
   width: 200px;
+  filter: grayscale(0%);
+}
+
+.title a {
+  color: #000;
 }
 
 .title p {

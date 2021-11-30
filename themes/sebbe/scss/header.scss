@@ -4,6 +4,10 @@
     justify-content: space-between;
 }
 
+.nav a {
+    color: $font-color;
+}
+
 .title,
 .logo {
     padding: 3em 3em 3em 0;
@@ -12,6 +16,11 @@
 
 .logo img {
     width: 200px;
+    filter: $filter;
+}
+
+.title a {
+    color: $font-color;
 }
 
 .title p {
