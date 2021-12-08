@@ -1,0 +1,49 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main technology-container" role="main">
+        {{ content }}
+
+        <picture>
+            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/snowflake1.jpg?w=320&h=320&crop-to-fit,{{ base_url }}/image/snowflake1.jpg?w=640&h=640&crop-to-fit 2x">
+            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/snowflake1.jpg?w=320&h=320&crop-to-fit">
+            <a href="{{ base_url }}/image/snowflake1.jpg"><img src="{{ base_url }}/image/snowflake1.jpg?w=320&h=320&crop-to-fit" class="max-width img" alt="snowflake"></a>
+        </picture>
+        <picture>
+            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/snowflake2.jpg?w=320&h=320&crop-to-fit, {{ base_url }}/image/snowflake2.jpg?w=320&h=320&crop-to-fit 2x">
+            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/snowflake2.jpg?w=320&h=320&crop-to-fit">
+            <a href="{{ base_url }}/image/snowflake2.jpg"><img src="{{ base_url }}/image/snowflake2.jpg?w=320&h=320&crop-to-fit" class="max-width img" alt="snowflake"></a>
+        </picture>
+        <picture>
+            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/snowflake3.jpg?w=320&h=320&crop-to-fit, {{ base_url }}/image/snowflake3.jpg?w=640&h=640&crop-to-fit 2x">
+            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/snowflake3.jpg?w=320&h=320&crop-to-fit">
+            <a href="{{ base_url }}/image/snowflake3.jpg"><img src="{{ base_url }}/image/snowflake3.jpg?w=320&h=320&crop-to-fit" class="max-width img" alt="snowflake"></a>
+        </picture>
+        <picture>
+            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/snowflake4.jpg?w=320&h=320&crop-to-fit, {{ base_url }}/image/snowflake3.jpg?w=640&h=640&crop-to-fit 2x">
+            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/snowflake4.jpg?w=320&h=320&crop-to-fit">
+            <a href="{{ base_url }}/image/snowflake4.jpg"><img src="{{ base_url }}/image/snowflake4.jpg?w=320&h=320&crop-to-fit" class="max-width img" alt="snowflake"></a>
+        </picture>
+        <picture>
+            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/snowflake5.jpg?w=320&h=320&crop-to-fit, {{ base_url }}/image/snowflake3.jpg?w=640&h=640&crop-to-fit 2x">
+            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/snowflake5.jpg?w=320&h=320&crop-to-fit">
+            <a href="{{ base_url }}/image/snowflake5.jpg"><img src="{{ base_url }}/image/snowflake5.jpg?w=320&h=320&crop-to-fit" class="max-width img" alt="snowflake"></a>
+        </picture>
+        <picture>
+            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/snowflake6.jpg?w=320&h=320&crop-to-fit, {{ base_url }}/image/snowflake3.jpg?w=640&h=640&crop-to-fit 2x">
+            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/snowflake6.jpg?w=320&h=320&crop-to-fit">
+            <a href="{{ base_url }}/image/snowflake6.jpg"><img src="{{ base_url }}/image/snowflake6.jpg?w=320&h=320&crop-to-fit" class="max-width img" alt="snowflake"></a>
+        </picture>
+        
+    </div>
+
+    <div class="video-container">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/QO6tQcwdO_o" title="Youtube" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>

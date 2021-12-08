@@ -6611,6 +6611,29 @@ pre code {
   gap: 2em 3em;
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 100px;
+  height: 60%;
+  width: 90%;
+}
+
+.video iframe {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  border-style: none;
+}
+
 .technology-container h1,
 .technology-container p {
   grid-column: span 3;
@@ -6625,6 +6648,19 @@ pre code {
   color: #a0a0a0;
   font-size: 2rem;
   text-decoration: none;
+}
+
+.img {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.img:hover {
+  opacity: 0.6;
 }
 
 .technology-container .technology:hover {
